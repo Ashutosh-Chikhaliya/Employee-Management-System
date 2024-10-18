@@ -34,38 +34,13 @@ const employees = [
                 "newTask": true,
                 "completed": false,
                 "failed": false
-            },
-            {
-                "taskTitle": "Client Follow-up",
-                "taskDescription": "Follow up with clients regarding feedback",
-                "taskDate": "2024-10-13",
-                "category": "Sales",
-                "active": true,
-                "newTask": true,
-                "completed": false,
-                "failed": false
-            },
-            {
-                "taskTitle": "Inventory Check",
-                "taskDescription": "Verify the product inventory for next month's sale",
-                "taskDate": "2024-10-14",
-                "category": "Logistics",
-                "active": true,
-                "newTask": false,
-                "completed": false,
-                "failed": false
-            },
-            {
-                "taskTitle": "Prepare Budget",
-                "taskDescription": "Create the budget plan for Q4",
-                "taskDate": "2024-10-15",
-                "category": "Finance",
-                "active": true,
-                "newTask": true,
-                "completed": false,
-                "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "activeTasks": 2,
+            "completedTasks": 1,
+            "failedTasks": 0
+        }
     },
     {
         "id": 2,
@@ -82,8 +57,33 @@ const employees = [
                 "newTask": true,
                 "completed": false,
                 "failed": false
+            },
+            {
+                "taskTitle": "Team Strategy",
+                "taskDescription": "Develop new team strategies for the project",
+                "taskDate": "2024-10-13",
+                "category": "Management",
+                "active": true,
+                "newTask": false,
+                "completed": false,
+                "failed": false
+            },
+            {
+                "taskTitle": "Weekly Report",
+                "taskDescription": "Submit weekly progress report",
+                "taskDate": "2024-10-14",
+                "category": "Operations",
+                "active": false,
+                "newTask": true,
+                "completed": true,
+                "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "activeTasks": 2,
+            "completedTasks": 1,
+            "failedTasks": 0
+        }
     },
     {
         "id": 3,
@@ -100,8 +100,43 @@ const employees = [
                 "newTask": true,
                 "completed": false,
                 "failed": false
+            },
+            {
+                "taskTitle": "Code Review",
+                "taskDescription": "Review the code for the latest release",
+                "taskDate": "2024-10-14",
+                "category": "Development",
+                "active": false,
+                "newTask": false,
+                "completed": true,
+                "failed": false
+            },
+            {
+                "taskTitle": "Team Coordination",
+                "taskDescription": "Coordinate with the team for the sprint plan",
+                "taskDate": "2024-10-15",
+                "category": "Management",
+                "active": true,
+                "newTask": true,
+                "completed": false,
+                "failed": false
+            },
+            {
+                "taskTitle": "Testing",
+                "taskDescription": "Test the new features",
+                "taskDate": "2024-10-16",
+                "category": "Quality Assurance",
+                "active": true,
+                "newTask": true,
+                "completed": false,
+                "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "activeTasks": 3,
+            "completedTasks": 1,
+            "failedTasks": 0
+        }
     },
     {
         "id": 4,
@@ -118,8 +153,33 @@ const employees = [
                 "newTask": false,
                 "completed": true,
                 "failed": false
+            },
+            {
+                "taskTitle": "Server Maintenance",
+                "taskDescription": "Check server maintenance logs",
+                "taskDate": "2024-10-15",
+                "category": "IT",
+                "active": true,
+                "newTask": false,
+                "completed": false,
+                "failed": false
+            },
+            {
+                "taskTitle": "System Upgrade",
+                "taskDescription": "Upgrade the IT systems for the new quarter",
+                "taskDate": "2024-10-16",
+                "category": "IT",
+                "active": true,
+                "newTask": true,
+                "completed": false,
+                "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "activeTasks": 2,
+            "completedTasks": 1,
+            "failedTasks": 0
+        }
     },
     {
         "id": 5,
@@ -136,8 +196,33 @@ const employees = [
                 "newTask": true,
                 "completed": false,
                 "failed": false
+            },
+            {
+                "taskTitle": "Social Media Plan",
+                "taskDescription": "Create a new social media strategy",
+                "taskDate": "2024-10-16",
+                "category": "Marketing",
+                "active": true,
+                "newTask": true,
+                "completed": false,
+                "failed": false
+            },
+            {
+                "taskTitle": "Market Research",
+                "taskDescription": "Research new target markets",
+                "taskDate": "2024-10-17",
+                "category": "Research",
+                "active": true,
+                "newTask": false,
+                "completed": false,
+                "failed": false
             }
-        ]
+        ],
+        "taskCount": {
+            "activeTasks": 3,
+            "completedTasks": 0,
+            "failedTasks": 0
+        }
     }
 ]
 
@@ -147,6 +232,7 @@ const admin = {
     "email": "rahul.dravid@example.com",
     "password": "123"
 }
+
 
 
 export const setLocalStorage = () => {
