@@ -1,3 +1,6 @@
+# Employee Management System
+This project is a web-based platform that enables employers to assign tasks to their employees and track their progress. Employees can view, accept, and update the status of their tasks as either completed or failed. The system streamlines task management, allowing employers to monitor productivity and performance.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
