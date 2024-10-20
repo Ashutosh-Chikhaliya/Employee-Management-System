@@ -3,7 +3,7 @@ import React from 'react'
 const CreateTask = () => {
     return (
         <div>
-            <div className='px-7 py-7 mt-7 bg-[#1b2430] rounded'>
+            <div className='px-7 py-7 mt-7 bg-[#0d1117] rounded border-[1px] border-[#3d444d]'>
                 <form className='flex flex-wrap w-full items-start justify-between'>
                     <div className='w-1/2'>
                         <div>
