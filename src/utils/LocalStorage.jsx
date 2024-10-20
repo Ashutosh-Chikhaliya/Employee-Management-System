@@ -2,7 +2,7 @@ const employees = [
     {
         "id": 1,
         "name": "Virat Kohli",
-        "email": "virat.kohli@example.com",
+        "email": "virat@bcci.com",
         "password": "123",
         "tasks": [
             {
@@ -38,14 +38,16 @@ const employees = [
         ],
         "taskCount": {
             "activeTasks": 2,
+            "newTasks": 2,
             "completedTasks": 1,
-            "failedTasks": 0
+            "failedTasks": 0,
+            "totalTasks": 3
         }
     },
     {
         "id": 2,
         "name": "Rohit Sharma",
-        "email": "rohit.sharma@example.com",
+        "email": "rohit@bcci.com",
         "password": "123",
         "tasks": [
             {
@@ -81,14 +83,16 @@ const employees = [
         ],
         "taskCount": {
             "activeTasks": 2,
+            "newTasks": 2,
             "completedTasks": 1,
-            "failedTasks": 0
+            "failedTasks": 0,
+            "totalTasks": 3
         }
     },
     {
         "id": 3,
-        "name": "MS Dhoni",
-        "email": "ms.dhoni@example.com",
+        "name": "Hardik Pandy",
+        "email": "hardik@bcci.com",
         "password": "123",
         "tasks": [
             {
@@ -134,14 +138,16 @@ const employees = [
         ],
         "taskCount": {
             "activeTasks": 3,
+            "newTasks": 3,
             "completedTasks": 1,
-            "failedTasks": 0
+            "failedTasks": 0,
+            "totalTasks": 4
         }
     },
     {
         "id": 4,
         "name": "Jasprit Bumrah",
-        "email": "jasprit.bumrah@example.com",
+        "email": "jasprit@bcci.com",
         "password": "123",
         "tasks": [
             {
@@ -177,14 +183,16 @@ const employees = [
         ],
         "taskCount": {
             "activeTasks": 2,
+            "newTasks": 1,
             "completedTasks": 1,
-            "failedTasks": 0
+            "failedTasks": 0,
+            "totalTasks": 3
         }
     },
     {
         "id": 5,
         "name": "Ravindra Jadeja",
-        "email": "ravindra.jadeja@example.com",
+        "email": "ravindra@bcci.com",
         "password": "123",
         "tasks": [
             {
@@ -220,30 +228,34 @@ const employees = [
         ],
         "taskCount": {
             "activeTasks": 3,
+            "newTasks": 2,
             "completedTasks": 0,
-            "failedTasks": 0
+            "failedTasks": 0,
+            "totalTasks": 3
         }
     }
-]
+];
 
-const admin = {
-    "id": 1,
-    "name": "Rahul Dravid",
-    "email": "rahul.dravid@example.com",
-    "password": "123"
-}
+const admin = [
+    {
+        "id": 1,
+        "name": "Rahul Dravid",
+        "email": "rahul@bcci.com",
+        "password": "123"
+    },
+];
+
 
 
 
 export const setLocalStorage = () => {
     localStorage.setItem("employees", JSON.stringify(employees))
     localStorage.setItem("admin", JSON.stringify(admin))
-
 }
+
 export const getLocalStorage = () => {
     const employees = JSON.parse(localStorage.getItem("employees"))
     const admin = JSON.parse(localStorage.getItem("admin"))
 
     return { employees, admin }
-
 }
