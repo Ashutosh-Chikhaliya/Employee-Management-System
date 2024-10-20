@@ -7,17 +7,17 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Complete Report",
-                "taskDescription": "Prepare the monthly financial report",
+                "taskDescription": "Prepare the monthly financial report by compiling all necessary financial data, analyzing trends, and presenting insights to the management team. Ensure accuracy and attention to detail, as this report will guide strategic decisions.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati ea earum magnam assumenda explicabo minus inventore minima consectetur. Voluptatem a numquam fugit!",
                 "taskDate": "2024-10-10",
                 "category": "Finance",
                 "active": true,
-                "newTask": true,
+                "newTask": false,
                 "completed": false,
                 "failed": false
             },
             {
                 "taskTitle": "Team Meeting",
-                "taskDescription": "Attend the weekly team sync-up",
+                "taskDescription": "Attend the weekly team sync-up where project statuses are discussed, challenges are addressed, and plans for the upcoming week are outlined. Collaboration and input from all team members are crucial for effective planning.",
                 "taskDate": "2024-10-11",
                 "category": "Meeting",
                 "active": false,
@@ -27,18 +27,18 @@ const employees = [
             },
             {
                 "taskTitle": "Product Update",
-                "taskDescription": "Update product features on the website",
+                "taskDescription": "Update product features on the website based on user feedback and recent developments. This includes reviewing current features, identifying areas for improvement, and implementing changes to enhance user experience.",
                 "taskDate": "2024-10-12",
                 "category": "Development",
-                "active": true,
+                "active": false,
                 "newTask": true,
                 "completed": false,
                 "failed": false
             }
         ],
         "taskCount": {
-            "activeTasks": 2,
-            "newTasks": 2,
+            "activeTasks": 1,
+            "newTasks": 1,
             "completedTasks": 1,
             "failedTasks": 0,
             "totalTasks": 3
@@ -52,17 +52,17 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Client Presentation",
-                "taskDescription": "Prepare slides for client presentation",
+                "taskDescription": "Prepare comprehensive slides for the client presentation scheduled next week. Ensure that the content is engaging and visually appealing, highlighting key metrics and project milestones to instill confidence in our clients.",
                 "taskDate": "2024-10-12",
                 "category": "Sales",
-                "active": true,
+                "active": false,
                 "newTask": true,
                 "completed": false,
                 "failed": false
             },
             {
                 "taskTitle": "Team Strategy",
-                "taskDescription": "Develop new team strategies for the project",
+                "taskDescription": "Develop innovative strategies for the project, focusing on enhancing team productivity and collaboration. This involves brainstorming sessions, researching industry best practices, and proposing actionable plans.",
                 "taskDate": "2024-10-13",
                 "category": "Management",
                 "active": true,
@@ -72,18 +72,18 @@ const employees = [
             },
             {
                 "taskTitle": "Weekly Report",
-                "taskDescription": "Submit weekly progress report",
+                "taskDescription": "Submit the weekly progress report to the management team. This includes an overview of completed tasks, ongoing projects, and any roadblocks faced during the week, ensuring transparency and accountability.",
                 "taskDate": "2024-10-14",
                 "category": "Operations",
                 "active": false,
-                "newTask": true,
+                "newTask": false,
                 "completed": true,
                 "failed": false
             }
         ],
         "taskCount": {
-            "activeTasks": 2,
-            "newTasks": 2,
+            "activeTasks": 1,
+            "newTasks": 1,
             "completedTasks": 1,
             "failedTasks": 0,
             "totalTasks": 3
@@ -97,17 +97,17 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Bug Fixes",
-                "taskDescription": "Fix bugs from the latest release",
+                "taskDescription": "Address and resolve bugs reported in the latest software release. This includes debugging code, conducting tests to ensure functionality, and implementing fixes that improve overall performance.",
                 "taskDate": "2024-10-13",
                 "category": "Development",
                 "active": true,
-                "newTask": true,
+                "newTask": false,
                 "completed": false,
                 "failed": false
             },
             {
                 "taskTitle": "Code Review",
-                "taskDescription": "Review the code for the latest release",
+                "taskDescription": "Review code submitted by team members for the latest release. Ensure adherence to coding standards, identify potential improvements, and provide constructive feedback to promote coding best practices.",
                 "taskDate": "2024-10-14",
                 "category": "Development",
                 "active": false,
@@ -117,28 +117,28 @@ const employees = [
             },
             {
                 "taskTitle": "Team Coordination",
-                "taskDescription": "Coordinate with the team for the sprint plan",
+                "taskDescription": "Coordinate with the team for the sprint planning meeting. This includes discussing priorities, allocating tasks, and setting deadlines to ensure a smooth workflow during the sprint.",
                 "taskDate": "2024-10-15",
                 "category": "Management",
-                "active": true,
+                "active": false,
                 "newTask": true,
                 "completed": false,
                 "failed": false
             },
             {
                 "taskTitle": "Testing",
-                "taskDescription": "Test the new features",
+                "taskDescription": "Conduct testing for new features implemented in the latest release. This includes creating test cases, executing tests, and reporting any discrepancies to ensure high-quality deliverables.",
                 "taskDate": "2024-10-16",
                 "category": "Quality Assurance",
                 "active": true,
-                "newTask": true,
+                "newTask": false,
                 "completed": false,
                 "failed": false
             }
         ],
         "taskCount": {
-            "activeTasks": 3,
-            "newTasks": 3,
+            "activeTasks": 2,
+            "newTasks": 1,
             "completedTasks": 1,
             "failedTasks": 0,
             "totalTasks": 4
@@ -152,7 +152,7 @@ const employees = [
         "tasks": [
             {
                 "taskTitle": "Database Backup",
-                "taskDescription": "Perform regular backup of the database",
+                "taskDescription": "Perform regular backups of the database to ensure data integrity and prevent loss of critical information. This involves scheduling backups and verifying the success of each backup operation.",
                 "taskDate": "2024-10-14",
                 "category": "IT",
                 "active": false,
@@ -162,7 +162,7 @@ const employees = [
             },
             {
                 "taskTitle": "Server Maintenance",
-                "taskDescription": "Check server maintenance logs",
+                "taskDescription": "Check server maintenance logs and perform necessary updates to ensure the servers are running optimally. This includes monitoring performance metrics and addressing any identified issues.",
                 "taskDate": "2024-10-15",
                 "category": "IT",
                 "active": true,
@@ -172,17 +172,17 @@ const employees = [
             },
             {
                 "taskTitle": "System Upgrade",
-                "taskDescription": "Upgrade the IT systems for the new quarter",
+                "taskDescription": "Upgrade the IT systems to meet the requirements for the new quarter. This includes evaluating current systems, identifying necessary upgrades, and implementing changes to enhance functionality and security.",
                 "taskDate": "2024-10-16",
                 "category": "IT",
-                "active": true,
+                "active": false,
                 "newTask": true,
                 "completed": false,
                 "failed": false
             }
         ],
         "taskCount": {
-            "activeTasks": 2,
+            "activeTasks": 1,
             "newTasks": 1,
             "completedTasks": 1,
             "failedTasks": 0,
@@ -201,7 +201,7 @@ const employees = [
                 "taskDate": "2024-10-15",
                 "category": "Marketing",
                 "active": true,
-                "newTask": true,
+                "newTask": false,
                 "completed": false,
                 "failed": false
             },
@@ -210,7 +210,7 @@ const employees = [
                 "taskDescription": "Create a new social media strategy",
                 "taskDate": "2024-10-16",
                 "category": "Marketing",
-                "active": true,
+                "active": false,
                 "newTask": true,
                 "completed": false,
                 "failed": false
@@ -220,14 +220,14 @@ const employees = [
                 "taskDescription": "Research new target markets",
                 "taskDate": "2024-10-17",
                 "category": "Research",
-                "active": true,
-                "newTask": false,
+                "active": false,
+                "newTask": true,
                 "completed": false,
                 "failed": false
             }
         ],
         "taskCount": {
-            "activeTasks": 3,
+            "activeTasks": 1,
             "newTasks": 2,
             "completedTasks": 0,
             "failedTasks": 0,
