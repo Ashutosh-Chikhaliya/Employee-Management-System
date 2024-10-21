@@ -31,7 +31,7 @@ const App = () => {
       localStorage.setItem("loggedInUser", JSON.stringify({ role: "admin" }))
     }
     else if (authData) {
-      const employee = authData.employees.find((e) => email === e.email && e.password == password)
+      const employee = authData[0].find((e) => email === e.email && e.password == password)
 
       if (employee) {
         setUser("employee")
@@ -49,7 +49,7 @@ const App = () => {
   return (
     <>
       {!user ? <Login handleLogin={handleLogin} /> : ""}
-      {user == "admin" ? <AdminDashboard /> : (user == "employee" ? <EmployeeDashboard data={loggedInUserData} /> : null)}
+      {user == "admin" ? <AdminDashboard changeUser={setUser} /> : (user == "employee" ? <EmployeeDashboard data={loggedInUserData} changeUser={setUser} /> : null)}
     </>
   )
 }

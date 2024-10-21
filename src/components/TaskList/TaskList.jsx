@@ -8,7 +8,7 @@ const TaskList = ({ data }) => {
 
     return (
         <div id='tasklist' className='flex justify-start items-center gap-5 flex-nowrap w-full py-10 mt-10 overflow-x-auto'>
-            {data.data.tasks.map((elem, index) => {
+            {data.tasks.map((elem, index) => {
                 if (elem.active) {
                     return <AcceptTask key={index} data={elem} />
                 }
